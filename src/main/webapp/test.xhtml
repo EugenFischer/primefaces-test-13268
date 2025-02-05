@@ -3,7 +3,8 @@
       xmlns:ui="jakarta.faces.facelets"
       xmlns:f="jakarta.faces.core"
       xmlns:h="jakarta.faces.html"
-      xmlns:p="primefaces">
+      xmlns:p="primefaces"
+      xmlns:demo="jakarta.faces.composite/component">
 
 <h:head>
     <title>PrimeFaces Test</title>
@@ -41,5 +42,8 @@
         </f:facet>
     </p:dialog>
 
+    <h:form id="someOther">
+        <demo:panelStateStuff id="panelStateStuff" defaultState="true" />
+    </h:form>
 </h:body>
 </html>
